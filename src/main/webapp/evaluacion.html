@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+        <link rel="stylesheet" type="text/css" href="css/evaluacion.css">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="js/evaluacion.js"></script>
+
+    </head>
+    <body style="background-color: #ECF6CE !important;">
+
+        <!-- Jumbotron -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="jumbotron">
+                        <section class="vh-100">
+                            <div class="container h-100">
+                                <div class="row d-flex justify-content-center align-items-center h-100">
+                                    <div class="col-lg-12 col-xl-11">
+                                        <div class="card text-black" style="border-radius: 20px;">
+                                            <div class="card-body p-md-12">
+                                                <div class="row justify-content-center">
+
+                                                    <div class="col-md-12 col-lg-12 col-xl-12 order-12 order-lg-12">
+
+                                                        <p class="text-center fw-bold mb-12 mx-12 mx-md-12 mt-12" id="p_titulo"></p>
+
+                                                        <form class="mx-1 mx-md-12">
+                                                            <div class="col-md-6 mb-4" style="display: none;">
+                                                                <div class="form-outline">
+                                                                    <input type="text" id="txt_id" class="form-control form-control-lg" required />
+                                                                    <label class="form-label" for="txt_id">ID</label>
+                                                                </div>
+                                                            </div>
+                                                            <!-- Pregunta 1 -->
+                                                            <div class="row">
+
+                                                                <div class="col-md-4 mb-4">
+                                                                    <label class="form-label" for="txt_nombres">Presentacion Personal</label>
+                                                                </div>
+                                                                <div class="col-md-8 mb-4">
+                                                                    <div class="row">
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP1" id="P1R1" value="1">
+                                                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP1" id="P1R2" value="2">
+                                                                            <label class="form-check-label" for="inlineRadio1">2</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP1" id="P1R3" value="3">
+                                                                            <label class="form-check-label" for="inlineRadio1">3</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP1" id="P1R4" value="4">
+                                                                            <label class="form-check-label" for="inlineRadio1">4</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP1" id="P1R5" value="5">
+                                                                            <label class="form-check-label" for="inlineRadio1">5</label>
+                                                                        </div>
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                            <!-- Fin Pregunta 1 -->
+                                                            <!-- Pregunta 2 -->
+                                                            <div class="row">
+
+                                                                <div class="col-md-4 mb-4">
+                                                                    <label class="form-label" for="txt_nombres">Claridad en la informaciòn</label>
+                                                                </div>
+                                                                <div class="col-md-8 mb-4">
+                                                                    <div class="row">
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP2" id="P1R1" value="1">
+                                                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP2" id="P1R2" value="2">
+                                                                            <label class="form-check-label" for="inlineRadio1">2</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP2" id="P1R3" value="3">
+                                                                            <label class="form-check-label" for="inlineRadio1">3</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP2" id="P1R4" value="4">
+                                                                            <label class="form-check-label" for="inlineRadio1">4</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP2" id="P1R5" value="5">
+                                                                            <label class="form-check-label" for="inlineRadio1">5</label>
+                                                                        </div>
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                            <!-- Fin Pregunta 2 -->
+                                                            <!-- Pregunta 3 -->
+                                                            <div class="row">
+
+                                                                <div class="col-md-4 mb-4">
+                                                                    <label class="form-label" for="txt_nombres">Agilidad en la atenciòn</label>
+                                                                </div>
+                                                                <div class="col-md-8 mb-4">
+                                                                    <div class="row">
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP3" id="P1R1" value="1">
+                                                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP3" id="P1R2" value="2">
+                                                                            <label class="form-check-label" for="inlineRadio1">2</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP3" id="P1R3" value="3">
+                                                                            <label class="form-check-label" for="inlineRadio1">3</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP3" id="P1R4" value="4">
+                                                                            <label class="form-check-label" for="inlineRadio1">4</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP3" id="P1R5" value="5">
+                                                                            <label class="form-check-label" for="inlineRadio1">5</label>
+                                                                        </div>
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                            <!-- Fin Pregunta 3 -->
+                                                            <!-- Pregunta 4 -->
+                                                            <div class="row">
+
+                                                                <div class="col-md-4 mb-4">
+                                                                    <label class="form-label" for="txt_nombres">Trato al Ciudadano</label>
+                                                                </div>
+                                                                <div class="col-md-8 mb-4">
+                                                                    <div class="row">
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP4" id="P1R1" value="1" required>
+                                                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP4" id="P1R2" value="2" required>
+                                                                            <label class="form-check-label" for="inlineRadio1">2</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP4" id="P1R3" value="3" required>
+                                                                            <label class="form-check-label" for="inlineRadio1">3</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP4" id="P1R4" value="4" required>
+                                                                            <label class="form-check-label" for="inlineRadio1">4</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP4" id="P1R5" value="5" required>
+                                                                            <label class="form-check-label" for="inlineRadio1">5</label>
+                                                                        </div>
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                            <!-- Fin Pregunta 4 -->
+                                                            <!-- Pregunta 5 -->
+                                                            <div class="row">
+
+                                                                <div class="col-md-4 mb-4">
+                                                                    <label class="form-label" for="txt_nombres">Capacidad para asesorar y orientar</label>
+                                                                </div>
+                                                                <div class="col-md-8 mb-4">
+                                                                    <div class="row">
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP5" id="P1R1" value="1">
+                                                                            <label class="form-check-label" for="inlineRadio1">1</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP5" id="P1R2" value="2">
+                                                                            <label class="form-check-label" for="inlineRadio1">2</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP5" id="P1R3" value="3">
+                                                                            <label class="form-check-label" for="inlineRadio1">3</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP5" id="P1R4" value="4">
+                                                                            <label class="form-check-label" for="inlineRadio1">4</label>
+                                                                        </div>
+                                                                        <div class="col-md-2 mb-4">
+                                                                            <input class="form-check-input" type="radio" name="RP5" id="P1R5" value="5">
+                                                                            <label class="form-check-label" for="inlineRadio1">5</label>
+                                                                        </div>
+                                                                    </div>  
+                                                                </div>
+                                                            </div>
+                                                            <!-- Fin Pregunta 5 -->
+
+                                                            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                                                <button type="button" class="btn btn-primary btn-lg" id="btn_registrar">Registrar</button>
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+        <!-- End of Jumbotron -->
+
+    </body>
+</html>

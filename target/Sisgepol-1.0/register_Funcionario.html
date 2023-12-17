@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Registro de Funcionario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="css/register_funcionario.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="js/register_funcionario.js"></script>
+    </head>
+
+
+    <body style="background-color: #ECF6CE !important;">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#resNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">SISGEPOL</a>
+            </div>
+            <div class="collapse navbar-collapse" id="resNav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="gestionar_usuario.html">Gestionar Funcionario</a></li>
+                    <li><a href="register_Funcionario.html">Registrar Funcionario</a></li>
+                    <li><a href="evaluar_funcionario.html">Evaluaciòn</a></li>
+                </ul>
+            </div>
+        </nav> <!-- End of Navigation Bar -->
+
+        <!-- Jumbotron -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="jumbotron">
+                        <section class="vh-100">
+                            <div class="container h-100">
+                                <div class="row d-flex justify-content-center align-items-center h-100">
+                                    <div class="col-lg-12 col-xl-11">
+                                        <div class="card text-black" style="border-radius: 20px;">
+                                            <div class="card-body p-md-6">
+                                                <div class="row justify-content-center">
+
+                                                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+
+                                                        <p class="text-center fw-bold mb-5 mx-1 mx-md-4 mt-4" id="p_titulo">Registro Usuario</p>
+
+                                                        <form class="mx-1 mx-md-6">
+                                                            <div class="row">
+                                                                <div class="col-md-6 mb-4" style="display: none;">
+                                                                    <div class="form-outline">
+                                                                        <input type="text" id="txt_id" class="form-control form-control-lg" required />
+                                                                        <label class="form-label" for="txt_id">ID</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 mb-4">
+                                                                    <div class="form-outline">
+                                                                        <input type="text" id="txt_nombres" class="form-control form-control-lg" required />
+                                                                        <label class="form-label" for="txt_nombres">Nombres</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 mb-4">
+                                                                    <div class="form-outline">
+                                                                        <input type="text" id="txt_apellidos" class="form-control form-control-lg" required />
+                                                                        <label class="form-label" for="txt_apellido">Apellidos</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                                <div class="form-outline flex-fill mb-0">
+                                                                    <input type="email" id="txt_correo" class="form-control" required />
+                                                                    <label class="form-label" for="txt_correo">Correo</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-md-6 mb-4">
+                                                                    <div class="form-outline">
+                                                                        <input type="password" id="txt_contrasena" class="form-control form-control-lg" required />
+                                                                        <label class="form-label" for="txt_contrasena">Contraseña</label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-md-6 mb-4">
+                                                                    <div class="form-outline">
+                                                                        <input type="password" id="txt_repit_contrasena" class="form-control form-control-lg" required />
+                                                                        <label class="form-label" for="txt_repit_contrasena">Repita la contraseña</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                                <div class="form-outline flex-fill mb-0">
+                                                                    <select class="form-control" id="txt_rol">
+                                                                        <option selected>Seleccione</option>
+                                                                        <option value="Usuario">Usuario</option>
+                                                                        <option value="Funcionario">Funcionario</option>
+                                                                        <option value="Administrador">Administrador</option>
+                                                                    </select>
+                                                                    <label class="form-label" for="txt_rol">Rol</label>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                                <div class="form-outline flex-fill mb-0">
+                                                                    <input type="text" id="txt_placa" class="form-control" required />
+                                                                    <label class="form-label" for="txt_placa">Placa</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                                <div class="form-outline flex-fill mb-0">
+                                                                    <input type="text" id="txt_estado" class="form-control" required />
+                                                                    <label class="form-label" for="txt_estado">Estado</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                                <div class="form-outline flex-fill mb-0">
+                                                                    <input type="text" id="txt_estacion" class="form-control" required />
+                                                                    <label class="form-label" for="txt_estacion">Estacion</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex flex-row align-items-center mb-4">
+                                                                <div class="form-outline flex-fill mb-0">
+                                                                    <input type="text" id="txt_grado" class="form-control" required />
+                                                                    <label class="form-label" for="txt_grado">Grado</label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                                                <button type="button" class="btn btn-primary btn-lg" id="btn_registrar">Registrar</button>
+                                                            </div>
+
+                                                        </form>
+                                                    </div>
+                                                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                                                        <img src="img/militar1.png"
+                                                             class="img">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of Jumbotron -->
+    </body>
+</html>
+

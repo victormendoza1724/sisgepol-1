@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+        <link rel="stylesheet" type="text/css" href="css/evaluar_funcionario.css">
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="js/evaluar_funcionario.js"></script>
+
+    </head>
+    <body style="background-color: #ECF6CE !important;">
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-default navbar-fixed-top" id="menu">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#resNav">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">SISGEPOL</a>
+            </div>
+            <div class="collapse navbar-collapse" id="resNav">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="gestionar_usuario.html">Gestionar Funcionario</a></li>
+                    <li><a href="register_Funcionario.html">Registrar Funcionario</a></li>
+                    <li><a href="evaluar_funcionario.html">Evaluaciòn</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Jumbotron -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="jumbotron">
+                        <center><h1><b>Funcionarios</b></h1></center> 
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Correo</th>
+                                    <th scope="col">Placa</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Estación</th>
+                                    <th scope="col">Grado</th>
+                                    <th scope="col">Novedad</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usuarios-tbody">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="jumbotron">
+                        <center><h3><b id="p_titulo">Funcionario</b></h3></center>
+                        <form class="mx-1 mx-md-6">
+                            <div class="row">
+                                <div class="col-md-6 mb-4" style="display: none;">
+                                    <div class="form-outline">
+                                        <input type="text" id="txt_id" class="form-control form-control-lg" disabled/>
+                                        <label class="form-label" for="txt_id">ID</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <input type="email" id="txt_correo" class="form-control" disabled />
+                                    <label class="form-label" for="txt_correo">Correo</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <input type="text" id="txt_rol" class="form-control form-control-lg" disabled />
+                                    <label class="form-label" for="txt_rol">Rol</label>    
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <input type="text" id="txt_placa" class="form-control" disabled />
+                                    <label class="form-label" for="txt_placa">Placa</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <input type="text" id="txt_estado" class="form-control" disabled />
+                                    <label class="form-label" for="txt_estado">Estado</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <input type="text" id="txt_estacion" class="form-control" disabled />
+                                    <label class="form-label" for="txt_estacion">Estacion</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-row align-items-center mb-4">
+                                <div class="form-outline flex-fill mb-0">
+                                    <input type="text" id="txt_grado" class="form-control" disabled />
+                                    <label class="form-label" for="txt_grado">Grado</label>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                                <button type="button" class="btn btn-success btn-lg" id="btn_evaluar">Evaluar</button>
+                                <button type="button" class="btn btn-info btn-lg" id="btn_revisar">Revisar Evaluaciones</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End of Jumbotron -->
+
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" type="text/css" href="css/grafica.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/grafica.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+
+    </head>
+    <body style="background-color: #ECF6CE !important;">
+
+        <!-- Jumbotron -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="jumbotron">
+                        <section class="vh-100">
+                            <div class="container h-100">
+                                <div class="row d-flex justify-content-center align-items-center h-100">
+                                    <div class="col-lg-12 col-xl-11">
+                                        <div class="card text-black" style="border-radius: 20px;">
+                                            <div class="card-body p-md-12">
+                                                <div class="row justify-content-center">
+
+                                                    <div class="col-md-12 col-lg-12 col-xl-12 order-12 order-lg-12">
+
+                                                        <p class="text-center fw-bold mb-12 mx-12 mx-md-12 mt-12" id="p_titulo"></p>
+                                                        <form class="mx-1 mx-md-12">
+                                                            <div class="col-md-6 mb-4" style="display: none;">
+                                                                <div class="form-outline">
+                                                                    <input type="text" id="txt_id" class="form-control form-control-lg" required />
+                                                                    <label class="form-label" for="txt_id">ID</label>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="container shadow min-vh-100 py-2">
+                                                                    <div class="row justify-content-center">
+                                                                        <div class="col-lg-6 col-sm-6">
+                                                                            <label for="fecha_inicio">Fecha Inicio</label>
+                                                                            <input id="fecha_inicio" class="form-control" type="date" disabled/>
+                                                                            <span id="fecha_inicio_Seleccion"></span>
+                                                                        </div>
+                                                                        <div class="col-lg-6 col-sm-6">
+                                                                            <label for="fecha_fin">Fecha Fin</label>
+                                                                            <input id="fecha_fin" class="form-control" type="date" disabled />
+                                                                            <span id="fecha_fin_Seleccion"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                            <div class="row">
+                                                                <div class="container shadow min-vh-100 py-2">
+                                                                    <button type="button" class="btn btn-primary btn-dark" id="btn_cerrar" onclick="cerrar()">Cerrar</button>
+                                                                </div>
+                                                            </div>
+
+                                                        </form> 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <center>
+                                            <canvas id="marksChart"></canvas>
+                                        </center>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>      
+        </div>
+
+        <!-- End of Jumbotron -->
+
+    </body>
+</html>
